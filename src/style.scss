@@ -11,5 +11,17 @@ html, body, #root {
 }
 
 html {
-  font-family: Arial, 'sans-serif';
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0; /* ширина для вертикального скролла */
+  height: 0; /* высота для горизонтального скролла */
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb:hover {
 }
