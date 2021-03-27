@@ -1,20 +1,21 @@
 .cart {
   height: 100%;
-  width: 300px;
+  width: 500px;
   position: fixed;
-  right: -330px;
+  right: -500px;
   top: 0;
   box-sizing: content-box;
   padding: 15px;
   background-color: #ffffff;
   transition: .5s;
-  transform: translate(330px, 0);
+  transform: translate(500px, 0);
   z-index: 100;
+  overflow: scroll;
 
 
   &.open {
     transition: .5s;
-    transform: translate(-330px,0);
+    transform: translate(-500px,0);
   }
 
 }
@@ -40,5 +41,27 @@
       height: 100%;
     }
 
+  }
+}
+
+.cart-body {
+
+  &__list {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+
+    &__item {
+
+    }
+  }
+}
+
+.cart-footer {
+
+  &__total {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0 50px 0;
   }
 }
